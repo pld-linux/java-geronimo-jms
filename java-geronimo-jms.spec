@@ -9,7 +9,7 @@
 Summary:	J2EE JMS v1.1 API
 Name:		java-geronimo-jms
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	ASL 2.0
 Group:		Libraries/Java
 URL:		http://geronimo.apache.org/
@@ -20,6 +20,7 @@ Source0:	http://pkgs.fedoraproject.org/repo/pkgs/geronimo-jms/%{spec_name}-%{ver
 Patch0:		geronimo-jms-1.1-api-remove-mockobjects.patch
 BuildRequires:	jpackage-utils
 BuildRequires:	rpmbuild(macros) >= 1.300
+Provides:	java(jms) = %{version}-%{release}
 Provides:	jms = %{version}-%{release}
 Obsoletes:	geronimo-jms < 1.1.1-0.1
 Obsoletes:	geronimo-specs <= 1.0-3.3
