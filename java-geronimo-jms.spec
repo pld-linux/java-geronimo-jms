@@ -5,7 +5,6 @@
 
 %define		srcname		geronimo-jms
 %define		spec_name	%{srcname}_1.1_spec
-%include	/usr/lib/rpm/macros.java
 Summary:	J2EE JMS v1.1 API
 Name:		java-geronimo-jms
 Version:	1.1.1
