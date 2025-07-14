@@ -51,7 +51,7 @@ Javadoc pour %{name}.
 
 %prep
 %setup -q -n %{spec_name}-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 # do what 'mvn package' would
