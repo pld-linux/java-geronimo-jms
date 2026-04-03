@@ -8,7 +8,7 @@
 Summary:	J2EE JMS v1.1 API
 Name:		java-geronimo-jms
 Version:	1.1.1
-Release:	2
+Release:	3
 License:	ASL 2.0
 Group:		Libraries/Java
 URL:		http://geronimo.apache.org/
