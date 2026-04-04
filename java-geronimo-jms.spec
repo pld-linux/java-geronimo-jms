@@ -3,12 +3,14 @@
 %bcond_without	javadoc		# don't build javadoc
 %bcond_with		tests		# don't build and run tests
 
+%{?use_default_jdk:%use_default_jdk 8}
+
 %define		srcname		geronimo-jms
 %define		spec_name	%{srcname}_1.1_spec
 Summary:	J2EE JMS v1.1 API
 Name:		java-geronimo-jms
 Version:	1.1.1
-Release:	3
+Release:	4
 License:	ASL 2.0
 Group:		Libraries/Java
 URL:		http://geronimo.apache.org/
@@ -18,7 +20,8 @@ Source0:	http://pkgs.fedoraproject.org/repo/pkgs/geronimo-jms/%{spec_name}-%{ver
 # Remove unavailable dependencies
 Patch0:		geronimo-jms-1.1-api-remove-mockobjects.patch
 BuildRequires:	jpackage-utils
-BuildRequires:	rpmbuild(macros) >= 1.300
+BuildRequires:	rpmbuild(macros) >= 1.556
+%buildrequires_jdk
 Provides:	java(jms) = %{version}-%{release}
 Provides:	jms = %{version}-%{release}
 Obsoletes:	geronimo-jms < 1.1.1-0.1
